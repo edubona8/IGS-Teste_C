@@ -20,7 +20,7 @@ $ ./teste_1.o
 
 ---
 
-## Lógica ultilizada em cada exercício:
+## Lógica usada em cada exercício:
 
 <br>
 
