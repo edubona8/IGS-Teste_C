@@ -113,13 +113,14 @@ int calcular_maximum_bitwise(int v1, int v2)
  Á lógica que foi utilizada, foi pegar o primeira primeira posição da cartela, comparar com todas as outras posições do sorteio e verificar se em algum indice é igual, se for é colocado o "X" na marcação se não "O", depois é feito a mesma coisa com todos os outros indices da cartela.
 
 ```c
-void avaliar_marcacao(int *sorteio, int tam_sorteio, int *cartela, char* marcacao, int tam_marcacao) {
+void avaliar_marcacao(int *sorteio, int tam_sorteio, int *cartela, char *marcacao, int tam_marcacao)
+{
 
     int i;
     int j;
 
     i = 0;
-    while(cartela[i])
+    while (cartela[i])
     {
         j = 0;
         while (sorteio[j])
