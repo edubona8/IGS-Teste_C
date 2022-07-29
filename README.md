@@ -47,18 +47,17 @@ int maior_valor(int v1, int v2, int v3, int v4)
 ```
 - Desafio 2:
 
+  Basicamente para realizar o cálculo do fatorial fiz um loop decompondo o valor_n em 1 enquanto ele for maior que zero
+  e atribuimos na váriavel *valor_ft já multiplicando.
+  <br>
+  Fiz duas alterações nos parâmentros da função "calc_fatorial(&vf, *pv)" 
+  atribuindo o endereço na váriavel "vf", para que dentro da função ser possivel 
+  fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a           	  
+  desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
+
 ```c
 void calc_fatorial(int *valor_ft, int valor_n)
-{    
-    /* Basicamente para realizar o cálculo do fatorial fiz um loop decompondo o valor_n em 1 enquanto ele for maior que zero
-     e atribuimos na váriavel *valor_ft já multiplicando.
-    */
-    /* Fiz duas alterações nos parâmentros da função "calc_fatorial(&vf, *pv)" 
-    atribuindo o endereço na váriavel "vf", para que dentro da função ser possivel 
-    fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a           	  
-    desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
-     */
-    
+{   
     *valor_ft = 1;
 
     while(valor_n > 0)
@@ -68,4 +67,24 @@ void calc_fatorial(int *valor_ft, int valor_n)
     }
 }
 ```
+```
 
+- Desafio 3:
+  
+ A lógica que utilizei para este desafio, foi a seguinte:<br>
+ 1º - ordenar o array em ordem crescente para facilitar a validação de soma com o algoritmo bubble sort.<br>
+ 2º - validar se o inteiro auxiliar é menor que o valor de referência.<br>
+ 3º - retornar a quantidade de vezes que incrementei para o seguinte passo.<br>
+
+```c
+int maximo_elementos(int valor_ref, int* array, int tamanho_array)
+{
+    int aux = 0;
+    int i = 0;
+    bubble_sort(array, tamanho_array);
+
+    for(i = 0; aux < valor_ref; i++)
+        aux = aux + array[i];
+    return(i - 1);
+}
+```
