@@ -50,6 +50,7 @@ void avaliar_marcacao(int *sorteio, int tam_sorteio, int *cartela, char *marcaca
         i++;
     }
 }
+
 int main()
 {
     int sorteio[MAX_SORTEIO] = {11, 21, 5, 1, 8, 20, 60, 58, 44, 49, 25, 29, 14, 27, 50, 56, 9, 29, 33, 10, 40, 6, 51, 55, 22};
