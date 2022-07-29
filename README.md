@@ -45,7 +45,7 @@ int maior_valor(int v1, int v2, int v3, int v4)
 	return (maiorNumero);
 }
 ```
-<br>
+<br><br>
 - Desafio 2:
 
   Basicamente para realizar o cálculo do fatorial fiz um loop decompondo o valor_n em 1 enquanto ele for maior que zero
@@ -53,8 +53,7 @@ int maior_valor(int v1, int v2, int v3, int v4)
   <br>
   Fiz duas alterações nos parâmentros da função "calc_fatorial(&vf, *pv)" 
   atribuindo o endereço na váriavel "vf", para que dentro da função ser possivel 
-  fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a           	  
-  desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
+  fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
 
 ```c
 void calc_fatorial(int *valor_ft, int valor_n)
