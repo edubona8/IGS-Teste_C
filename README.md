@@ -65,11 +65,11 @@ void calc_fatorial(int *valor_ft, int valor_n)
 }
 ```
 
-<br>
+<br><br>
 
 - Desafio 3:
   
-Para resolver o exercico eu basicamente ordenei o array por meio do algoritmo de insert_sort, após isso fui somando os index em ordem crescente até que o valor
+Para resolver o exercico eu basicamente ordenei o array por meio do algoritmo de insert_sort, após isso fui somando os índices em ordem crescente até que o valor
 da referencia não seja passado. E com base na quantidade de vezes que foi loopado é obtido o valor que precisamos.
 
 ```c
@@ -82,5 +82,52 @@ int maximo_elementos(int valor_ref, int* array, int tamanho_array)
     for(i = 0; aux < valor_ref; i++)
         aux = aux + array[i];
     return(i - 1);
+}
+```
+<br><br>
+
+- Desafio 4:
+  
+ Achei o exercicio mais dificil, por mais que já tenha ultilizado operadores de "bitwise" em alguns projetos, não consegui desenvolver uma lógica do zero.
+ Procurei na internet e consegui achar a solução.
+
+```c
+int calcular_maximum_bitwise(int v1, int v2)
+{
+    int result = v1 ^ ((v1 ^ v2) & -(v1 < v2)); 
+    return(result);
+}
+```
+
+<br><br>
+
+
+- Desafio 5:
+  
+ Á lógica que foi utilizada, foi pegar o primeira primeira posição da cartela, comparar com todas as outras posições do sorteio e verificar se em algum indice é igual, se for é colocado o "X" na marcação se não "O", depois é feito a mesma coisa com todos os outros indices da cartela.
+
+```c
+void avaliar_marcacao(int *sorteio, int tam_sorteio, int *cartela, char* marcacao, int tam_marcacao) {
+
+    int i;
+    int j;
+
+    i = 0;
+    while(cartela[i])
+    {
+        j = 0;
+        while (sorteio[j])
+        {
+            if (sorteio[j] == cartela[i])
+            {
+                marcacao[i] = 'X';
+                break;
+            }
+            else
+                marcacao[i] = 'O';
+            j++;
+        }
+        i++;
+    }
 }
 ```
