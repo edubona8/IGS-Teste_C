@@ -70,18 +70,23 @@ void calc_fatorial(int *valor_ft, int valor_n)
 
 - Exercício 3:
   
-Para resolver o exercico eu basicamente ordenei o array por meio do algoritmo de insert_sort, após isso fui somando os índices em ordem crescente até que o valor
+Para resolver o exercico eu basicamente ordenei o array por meio do algoritmo de insertion sort, após isso fui somando os índices em ordem crescente até que o valor
 da referencia não seja passado. E com base na quantidade de vezes que foi loopado é obtido o valor que precisamos.
 
 ```c
-int maximo_elementos(int valor_ref, int* array, int tamanho_array)
+int maximo_elementos(int valor_ref, int *array, int tamanho_array)
 {
-    int aux = 0;
-    int i = 0;
-    bubble_sort(array, tamanho_array);
-
-    for(i = 0; aux < valor_ref; i++)
-        aux = aux + array[i];
+    insertionSort(array,tamanho_array);
+    int aux;
+    int i;
+     
+    aux = 0;
+    i = 0;
+    while(aux < valor_ref)
+    {
+        aux += array[i];
+        i++;
+    }
     return(i - 1);
 }
 ```
