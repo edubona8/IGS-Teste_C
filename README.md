@@ -25,6 +25,9 @@ $ ./teste_1.o
 <br>
 
 - Exercício 1:
+
+Atribui o v1 para váriavel "maiorNumero" e fiz a comparação com todos os outros números se algum for maior, á variável "maiorNumero" e atribuida nele o loop se repete.
+
 ```c
 int maior_valor(int v1, int v2, int v3, int v4)
 { 
