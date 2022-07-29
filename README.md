@@ -54,7 +54,9 @@ void calc_fatorial(int *valor_ft, int valor_n)
      e atribuimos na váriavel *valor_ft já multiplicando.
     */
     /* Fiz duas alterações nos parâmentros da função "calc_fatorial(&vf, *pv)" 
-    atribuindo o endereço na váriavel "vf", para que dentro da função ser possivel fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a           	  desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
+    atribuindo o endereço na váriavel "vf", para que dentro da função ser possivel 
+    fazer a desreferenciação e atribuir valores, e já na váriavel "pv" fiz a           	  
+    desreferencição já no paramentro para que seja possivel ultilizar o valor dela.
      */
     
     *valor_ft = 1;
