@@ -2,9 +2,9 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
+
 int calcular_maximum_bitwise(int v1, int v2)
 {
-    //Não consegui desenvolver o algoritmo do zero 
     int result = v1 ^ ((v1 ^ v2) & -(v1 < v2)); 
     return(result);
 }

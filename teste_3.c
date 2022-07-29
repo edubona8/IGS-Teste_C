@@ -17,10 +17,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-// função auxiliar para preencher nosso array de inteiros.
-// arry_int sera preenchido com os valores inseridos
-// max_elementos quantidade maxima de elementos que o array_int pode receber
-// retorna a quantidade de elementos inteiros maiores que zero foram inseridos
 
 void insertionSort(int arr[], int n)
 {
@@ -88,7 +84,6 @@ int criar_array(int *array_int, int max_elementos)
 int maximo_elementos(int valor_ref, int *array, int tamanho_array)
 {
     
-    // A principio meu algoritmo só funciona com numeros positivos.
     insertionSort(array,tamanho_array);
     int aux;
     int i;
@@ -102,6 +97,7 @@ int maximo_elementos(int valor_ref, int *array, int tamanho_array)
     }
     return(i - 1);
 }
+
 int main()
 {
     const int max_elementos = 128;
