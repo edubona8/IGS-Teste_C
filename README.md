@@ -22,6 +22,7 @@ $ ./teste_1.o
 
 ## Lógica ultilizada em cada exercício:
 
+<br>
 
 - Desafio 1:
 ```c
