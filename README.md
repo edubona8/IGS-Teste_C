@@ -45,6 +45,7 @@ int maior_valor(int v1, int v2, int v3, int v4)
 	return (maiorNumero);
 }
 ```
+<br>
 - Desafio 2:
 
   Basicamente para realizar o cálculo do fatorial fiz um loop decompondo o valor_n em 1 enquanto ele for maior que zero
